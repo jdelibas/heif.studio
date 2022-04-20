@@ -1,0 +1,53 @@
+{
+  "name": "heif.studio",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "rimraf ./dist && parcel build --public-url / --no-optimize --no-scope-hoist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdelibas/heif.studio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdelibas/heif.studio/issues"
+  },
+  "homepage": "https://github.com/jdelibas/heif.studio#readme",
+  "dependencies": {
+    "heic-convert": "1.2.4",
+    "heic2any": "0.0.3"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "2.4.1",
+    "@parcel/packager-xml": "2.4.1",
+    "assert": "2.0.0",
+    "browserify-zlib": "0.2.0",
+    "buffer": "6.0.3",
+    "crypto-browserify": "3.12.0",
+    "events": "3.3.0",
+    "parcel": "2.4.1",
+    "parcel-config-pwa-manifest": "0.1.1",
+    "path-browserify": "1.0.1",
+    "process": "0.11.10",
+    "rimraf": "3.0.2",
+    "stream-browserify": "3.0.0",
+    "util": "0.12.4"
+  },
+  "pwaManifest": {
+    "name": "heif.pro",
+    "theme": "#ffffff",
+    "generateIconOptions": {
+      "baseIcon": "./src/icon.png",
+      "sizes": [
+        128,
+        192,
+        512
+      ]
+    }
+  }
+}

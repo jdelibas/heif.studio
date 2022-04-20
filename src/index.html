@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en" manifest="heif.studio.appcache">
+  <head>
+   <meta charset="UTF-8">
+   <title>heif.studio</title>
+   <style>
+     html, body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        background: #333;
+   </style>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  </head>
+  <body>
+
+    <header class="container">
+      <h1>heif.studio</h1>
+      <p> Convert heic or heif images to jpeg directly in your browser</p>
+      <input id="file" type="file">
+      <hr />
+    </header>
+
+    <main class="container">
+      <p id="result"></p>
+      <img id="image"/>
+
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
